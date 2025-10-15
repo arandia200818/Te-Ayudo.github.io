@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Te Ayudo</title>
+  <link rel="stylesheet" href="proyectoinicio.css">
+  <style>
+
+  </style>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="menu container">
+      <a href="#" class="logo"><strong>Te Ayudo</strong></a>
+      <nav class="navbar">
+        <ul>
+          <li><a href="proyectoinicio.html">Inicio</a></li>
+          <li><a href="proyectoaprende.html">Aprende</a></li>
+          <li><a href="proyectocuento.html">Cuentos</a></li>
+          <li><a href="#">Sugerencias</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <section class="video-section container">
+    <h2>Introduccion a la Lengua de Señas</h2>
+    <video id="video" controls>
+      <source src="video/Día Internacional de las Lenguas de Señas para niños 🤟🌍 - Efy de Belfia (720p, h264) (1).mp4" type="video/mp4" />
+      <track src="media/subtitulos.vtt" kind="subtitles" srclang="es" label="Español" default>
+    </video>
+    <div class="video-buttons">
+      <button onclick="playVideo('video')">▶ Reproducir</button>
+      <button onclick="pauseVideo('video')">⏸ Pausar</button>
+
+    </div>
+  </section>
+
+  </header>
+
+    <section class="video-section container">
+    <h2>Abecedario de la Lengua de Señas</h2>
+   <video id="videoPrincipal"controls>
+      <source src="video/Primer Curso Básico de Lengua de Señas Boliviana - 1. Alfabeto dactilológico universal - Alvaro Sanabria (JASZ) (480p, h264).mp4" type="video/mp4" />
+      <track src="media/subtitulos.vtt" kind="subtitles" srclang="es" label="Español" default>
+    </video>
+     <div class="video-buttons">
+      <button onclick="iniciarVideo()">▶ Reproducir</button>
+      <button onclick="detenerVideo()">⏸ Pausar</button>
+    </div>
+  </section>
+
+  <script>
+    const videoPrincipal = document.getElementById('videoPrincipal');
+
+    function iniciarVideo() {
+      videoPrincipal.play();
+    }
+
+    function detenerVideo() {
+      videoPrincipal.pause();
+    }
+  </script>
+      <section class="video-section container">
+    <h2>Numeros del 1 al 10 en la lengua de Señas</h2>
+   <video id="videoPrincipal2"controls>
+      <source src="video/Video de WhatsApp 2025-10-12 a las 19.47.02_24769bed.mp4" type="video/mp4" />
+      <track src="media/subtitulos.vtt" kind="subtitles" srclang="es" label="Español" default>
+    </video>
+     <div class="video-buttons">
+      <button onclick="gouVideo()">▶ Reproducir</button>
+      <button onclick="stopVideo()">⏸ Pausar</button>
+    </div>
+  </section>
+ <script>
+    const videoPrincipal2 = document.getElementById('videoPrincipal2');
+
+    function gouVideo() {
+      videoPrincipal2.play();
+    }
+
+    function stopVideo() {
+      videoPrincipal2.pause();
+    }
+  </script>
+      <section class="video-section container">
+    <h2>Pronombres en la lengua de Señas</h2>
+   <video id="videoPrincipal3"controls>
+      <source src="video/1014.mp4" type="video/mp4" />
+      <track src="media/subtitulos.vtt" kind="subtitles" srclang="es" label="Español" default>
+    </video>
+     <div class="video-buttons">
+      <button onclick="goVideo()">▶ Reproducir</button>
+      <button onclick="stoVideo()">⏸ Pausar</button>
+    </div>
+  </section>
+ <script>
+    const videoPrincipal3 = document.getElementById('videoPrincipal3');
+
+    function goVideo() {
+      videoPrincipal3.play();
+    }
+
+    function stoVideo() {
+      videoPrincipal3.pause();
+    }
+  </script>
+   </header>
+   
+  <footer class="footer container">
+    <div class="link">
+      <a href="#" class="logo">Te Ayudo</a>
+    </div>
+    <div class="link">
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="proyectoaprende.html">Aprende</a></li>
+        <li><a href="proyectocuento.html">Cuentos</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- AVATAR ANIMADO -->
+  <div class="avatar" id="avatar">
+    <img src="imagenes/134176180-nerd-face-emoji-clever-emoticon-with-glasses-geek-or-student-vector-illustration.jpg"
+      alt="Guía" />
+    <div class="avatar-text">
+      👋 ¡Hola que tal! Soy tiquito. Hoy sere tu guia empieza usando los botones grandes para explorar los cuentos y
+      aprender con señas.
+    </div>
+  </div>
+
+  <script>
+    const video = document.getElementById("video");
+
+    function playVideo() {
+      video.play();
+    }
+    function pauseVideo() {
+      video.pause();
+    }
+
+  </script>
+</body>
+
+</html>
